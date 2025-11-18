@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 15px;
+            background-color: rgb(133, 172, 159);
+        }
+        nav{
+            position: sticky;
+            top: 0px;
+            background-color: rgb(88, 178, 178);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            text-align: center;
+            background-color: rgb(126, 207, 126);
+            margin: 15px auto;
+            border: 2px solid black;
+            height: 500px;
+            width: 450px;
+        }
+        .logo{
+            position: fixed;
+           bottom: 10px;
+           right: 10px;
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           object-fit: cover;
+        }
+        .capsule{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            background-color: rgb(134, 171, 66);
+            border: 2px solid rgb(37, 37, 123);
+            border-radius: 40px;
+            width: 500px;
+            height: 100px;
+        }
+        .footer{
+            background-color: rgb(152, 242, 108);
+            margin-top: 20px;
+            height: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            This is navigation bar
+        </nav>
+        <div class="container">
+            <div class="box box1">this is box1</div>
+            <div class="box box2">this is box2</div>
+        </div>
+        <img src="vacation.jpg" alt="vacation" class="logo">
+       <div class="capsule"> this is capsule</div>
+       <footer class="footer">this is footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practice</title>
+    <style>
+        .container{
+            position: relative;
+            border: 2px solid black;
+            background-color: aquamarine;
+            width: 800px;
+            height: 600px;
+        }
+        .box{
+            border: 2px solid blue;
+            background-color: rgb(137, 104, 168);
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: AnimationX 3s linear infinite, AnimationY 1s ease-out infinite alternate;
+        }
+        @keyframes AnimationX {
+            from{
+                /* transform: translate(100px, 0px); */
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+         @keyframes AnimationY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

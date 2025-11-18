@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        @media only screen and (max-width: 455px) {
+            body{
+                background-color: red;
+            }
+            .type{
+                flex-direction: column;
+            }
+        }
+        .type{
+            display: flex;
+            width: 100%;
+        }
+        .media{
+            padding: 10px;
+            background-color: purple;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="type">
+    <div class="media">This is media</div>
+    <div class="media">This is media</div>
+    <div class="media">This is media</div>
+</div>
+</body>
+</html>

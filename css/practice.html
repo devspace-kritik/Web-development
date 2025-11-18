@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        .mainCard{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:aliceblue;
+            width: 30vw;
+            padding: 20px 25px 20px 25px;
+        }
+        .innerCard{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 5px;
+            flex-direction: column;
+            /* text-align: center; */
+            /* overflow: hidden; */
+            border-radius: 5px;
+        }
+        .center{
+            width: 100%;
+            height: auto;
+            /* text-align: center; */
+            border-radius: 5px;
+            object-fit: contain;
+        }
+        .topic{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+        .nature{
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .heading{
+            width: 100%;
+            padding-left: 10px;
+            font-size: 30px;
+            font-weight: 200;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: left;
+        }
+        .details{
+            width: 100%;
+            padding-left: 10px;
+        }
+        .more{
+            border: 1px solid aquamarine;
+            padding: 10px, 30px;
+            border-radius: 5px;
+            background-color: aquamarine;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+            color: aqua;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainCard">
+        <div class="innerCard">
+            <img src="vacation.jpg" alt="Vacation" width="50%" class="center">
+            <div class="topic">
+                <p class="nature">Nature</p>
+                <p class="nature">Lake</p>
+            </div>
+            <p class="heading">Nature Beauty</p>
+            <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum exercitationem est fuga adipisci deleniti eligendi blanditiis vero reprehenderit similique consequatur, consectetur nihil mollitia earum eius hic. Ratione incidunt esse obcaecati.</p>
+            <p class="more">Read More</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            background-color: yellow;
+        } */
+         /* .boxes *{
+            background-color: blue;
+            border: 2px solid black;
+            margin: 5px;
+         } */
+         /* grouping of selectors */
+         /* p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+         } */
+          /* .box:nth-child(even){
+            background-color: blue;
+          } */
+           /* .box:nth-last-child(1){
+            background-color: red;
+           } */
+            .boxes::before{
+                content: "Content before the div";
+            }
+            .boxes::after{
+                content: "content after the div";
+            }
+            ::selection{
+                background-color: black;
+                color: aqua;
+            }
+            .box::first-letter{
+                color: peru;
+            }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">This is first box</div>
+        <div class="box">Second Box</div>
+        <div class="box">Third box</div>
+    </div>
+</body>
+</html>

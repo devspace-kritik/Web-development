@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        :root{
+            --primary-color: rgb(91, 183, 183);
+            --text-color: white;
+            --secondary-color: rgb(80, 80, 142);
+        }
+        nav {
+            /* display: flex; */
+            background-color: var(--primary-color);
+            padding: 10px;
+            /* margin: 5px; */
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 25px;
+        }
+        ul li a{
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

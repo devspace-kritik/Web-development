@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+            background-color: black;
+        }
+        /* for direct child of Div */
+        div > h2{
+            color: green;
+            background-color: yellow;
+        }
+        /* for any decendence */
+        div h2{
+            color: beige;
+            background-color: blue;
+        }
+        /* for class */
+        .purple{
+            color: rgb(45, 173, 92);
+            background-color: yellow;
+        }
+        /* for any element with the id */
+        #black{
+            color: black;
+            background-color: white;
+        }
+
+        /* {universal selector */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* pseudo selectors */
+        a:visited{
+            color: brown;
+        }
+        a:link{
+            color: black;
+        }
+        p:first-child{
+            color: aqua;
+            background-color: crimson;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: aqua; background-color: blueviolet;">Hi there</h1>
+    <div>
+        <article>
+            <p>This is the first paragraph</p>
+            <p>This is the second paragraph</p>
+            <h2>This is HTML</h1>
+        </article>
+    </div>
+    <div class="purple">
+        <h1>This is another div with class</h1>
+    </div>
+    <div id="black">
+        <h1>This is another div with id</h1>
+    </div>
+    <Span>
+        This is span
+    </Span>
+    <br>
+    <a href="https://www.google.com/">Go to google</a>
+
+</body>
+</html>

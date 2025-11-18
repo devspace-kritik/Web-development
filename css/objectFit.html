@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and position</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 450px;
+            height: 460px;
+            /* background-color: aquamarine; */
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+        }
+        div img{
+            width: 450px;
+            height: 460px;
+            object-fit: cover;
+            object-position: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="nature"> -->
+    </div>
+</body>
+</html>

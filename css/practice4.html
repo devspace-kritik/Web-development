@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content:space-around;
+
+        }
+        .list{
+            display: flex;
+            gap: 20px 10px;
+        }
+        .item{
+            color: black;
+            font-size: 18px;
+            padding: 10px;
+            list-style-type: none;
+        }
+        .logo{
+            /* background-color: aqua; */
+            width: 200px;
+            height: 80px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="container">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="UltraEdit" class="logo">
+            <ul class="list">
+                <li class="item"><span>Pricing
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="black">
+                    <path d="M7 10l5 5 5-5"></path>
+                    </svg>
+                </span></li>
+                <li class="item"><span>Enterprices</span></li>
+                <li class="item"><span>About Us</span></li>
+                <li class="item"><span>Products</span></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>

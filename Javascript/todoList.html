@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+        } 
+        input {
+            padding: 5px;
+            width: 150px;
+            height: 40px;
+            margin: 30px;
+            border-radius: 10px;
+            border: 1px solid blueviolet;
+            background-color: white;
+        }
+        button {
+            padding: 5px;
+            width: 150px;
+            height: 40px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+        li {
+            margin: 10px;
+            width: 150px;
+            height: 40px;
+            border: 1px solid black;
+            background-color: azure;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <Input placeholder="Enter any task" class="taskInput"></Input>
+        <Input placeholder="Enter any task" class="priorityInput"></Input>
+        <Button onclick= "getData()">Add Task</Button>
+        <Button onclick= "removeLastTask()">Remove Last Task</Button>
+        <ul class="taskList">
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+        </ul>
+        <script src="todoList.js"></script>
+    </div>
+</body>
+</html>
