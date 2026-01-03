@@ -33,7 +33,11 @@ delete user.isAdmin;
 console.log(user.names+user.email+ user.skills);
 console.log(user["isAdmin"]);
 for(let key of Object.keys(user)){
+  //object.keys returns an array of strings of keys
   console.log(key);
-  
+}
+for(let [key, value] of Object.entries(user)){
+  //Object.entries returns an array containing arrays of key, value 
+  console.log(key+"- "+value);
 }
 
