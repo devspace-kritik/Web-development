@@ -35,3 +35,39 @@ const {
   },
 } = response;
 console.log(username, firstName, lastName);
+
+const rawUsers = [
+  {id: 1, name: "Amit", city: "Indore", password: "123", role: "user"},
+  {id: 2, name: "Sara", city: "Delhi", password: "abc", role: "admin"}
+];
+
+const settingsById = {
+  1: {theme: "dark", notifications: true},
+  2: {theme: "light", notifications: false}
+}
+
+function sanitizeUsers(rawUsers){
+  // return rawUsers.map((user) => {
+  //   const {password, ...rest} = user;
+  //   return rest;
+  // })
+  
+  return rawUsers.map(({password, ...user}) => user);
+}
+// console.log(sanitizeUsers(rawUsers));
+
+function addAdminFlag(rawUsers) {
+  return rawUsers.map((user) => {
+   return ({...user,
+     isAdmin : (user.role === "admin")
+   })
+
+  })
+}
+console.log(addAdminFlag(rawUsers));
+
+// rawUsers.forEach(user => {
+//   const users = [...rawUsers, ...settingsById];
+// });
+const users = rawUsers.map(user => ({...user, ...settingsById[user.id]}));
+console.log(users);
