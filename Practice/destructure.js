@@ -71,3 +71,24 @@ console.log(addAdminFlag(rawUsers));
 // });
 const users = rawUsers.map(user => ({...user, ...settingsById[user.id]}));
 console.log(users);
+
+const frontend = ["HTML", "CSS", "JavaScript"];
+const backend = ["Node.js", "Express", "MongoDB"];
+const fullstack = [...frontend, ...backend];
+
+const baseUser = { name: "Amit", city: "Indore", isAdmin: false };
+const adminUser = { ...baseUser, isAdmin: true };
+
+function sumAll(...nums) {
+  return nums.reduce((acc, n) => acc + n, 0);
+}
+
+const userData = {
+  id: 1,
+  name: "Amit",
+  email: "amit@example.com",
+  password: "secret123",
+  token: "abc123"
+};
+
+const { password, token, ...publicProfile } = userData;
