@@ -145,3 +145,16 @@ function removeTask(tasks, index){
 }
 tasks.map()
 console.log(removeTask(tasks, 2));
+
+const tags = ["js", "react", "js", "node", "react", "js"];
+
+const nums = [5, 10, 15, 20];
+
+const sum = nums.reduce((acc, n) => acc + n, 0);
+const average = sum / nums.length;
+
+
+const tagCount = tags.reduce((acc, tag) => {
+  acc[tag] = (acc[tag] || 0) + 1;
+  return acc;
+}, {});
